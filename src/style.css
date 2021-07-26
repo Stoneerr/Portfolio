@@ -7,7 +7,7 @@
 :root {
   --Primary: rgb(198, 255, 42);
   --Pry-White: hsl(255, 100%, 100%);
-  --Pry-DkNSatBlue: hsl(228, 58%, 12%);
+  --Pry-DkNSatBlue: hsl(227, 90%, 4%);
   --Pry-GrayBlue: hsl(226, 15%, 59%);
   --Neu-DkGray: hsl(0, 0%, 59%);
 }
@@ -15,28 +15,50 @@
 /* --- Defaults --- */
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   background: var(--Pry-DkNSatBlue);
-  overflow: hidden;
 }
 
 h1 {
   color: var(--Pry-White);
-  font-size: 3em;
+  font-size: 4em;
 }
 
 p {
   color: var(--Pry-GrayBlue);
 }
 
+img {
+  width: 100%;
+}
+
 /* Section */
+.presentation {
+  overflow: hidden;
+}
+
 .container {
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0 auto;
   max-width: 80%;
+}
+
+.presentation img {
+  object-fit: cover;
+  opacity: 0.05;
+  z-index: -10000;
+}
+
+#intro {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #intro p {
@@ -44,6 +66,20 @@ p {
   font-size: 2em;
 }
 
-#name {
-  color: var(--Primary);
+button {
+  font-family: "Source Sans Pro", sans-serif;
+  background: var(--Pry-DkNSatBlue);
+  color: var(--Pry-White);
+  cursor: pointer;
+}
+
+.btn {
+  font-size: 1em;
+  padding: 1em;
+  border: solid 3px white;
+  border-radius: 15px;
+}
+
+#intro .btn {
+  margin-top: 2em;
 }
