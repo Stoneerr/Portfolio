@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Primary: rgb(198, 255, 42);
+  --Pry-White: hsl(255, 100%, 100%);
+  --Pry-DkNSatBlue: hsl(228, 58%, 12%);
+  --Pry-GrayBlue: hsl(226, 15%, 59%);
+  --Neu-DkGray: hsl(0, 0%, 59%);
+}
+
+/* --- Defaults --- */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  background: var(--Pry-DkNSatBlue);
+  overflow: hidden;
+}
+
+h1 {
+  color: var(--Pry-White);
+  font-size: 3em;
+}
+
+p {
+  color: var(--Pry-GrayBlue);
+}
+
+/* Section */
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+#intro p {
+  font-style: italic;
+  font-size: 2em;
+}
+
+#name {
+  color: var(--Primary);
+}
